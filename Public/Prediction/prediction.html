@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disease Prediction - ConsultMe</title>
+    <link rel="stylesheet" href="./prediction.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Consult<span>Me</span></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../About Us/AboutUs.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Form Section -->
+    <div class="container">
+      <h1 class="subtitle">Disease Prediction</h1>
+      <form id="prediction-form">
+        <div class="row">
+          <label for="glucose">Glucose:</label>
+          <input
+            type="number"
+            id="glucose"
+            name="glucose"
+            step="0.00001"
+            required
+          />
+
+          <label for="cholesterol">Cholesterol:</label>
+          <input
+            type="number"
+            id="cholesterol"
+            name="cholesterol"
+            step="0.00001"
+            required
+          />
+
+          <label for="hemoglobin">Hemoglobin:</label>
+          <input
+            type="number"
+            id="hemoglobin"
+            name="hemoglobin"
+            step="0.00001"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="platelets">Platelets:</label>
+          <input
+            type="number"
+            id="platelets"
+            name="platelets"
+            step="0.00001"
+            required
+          />
+
+          <label for="whiteBloodCells">White Blood Cells:</label>
+          <input
+            type="number"
+            id="whiteBloodCells"
+            name="whiteBloodCells"
+            step="0.00001"
+            required
+          />
+
+          <label for="redBloodCells">Red Blood Cells:</label>
+          <input
+            type="number"
+            id="redBloodCells"
+            name="redBloodCells"
+            step="0.00001"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="hematocrit">Hematocrit:</label>
+          <input
+            type="number"
+            id="hematocrit"
+            name="hematocrit"
+            step="0.00001"
+            required
+          />
+
+          <label for="meanCorpuscularVolume">Mean Corpuscular Volume:</label>
+          <input
+            type="number"
+            id="meanCorpuscularVolume"
+            name="meanCorpuscularVolume"
+            step="0.00001"
+            required
+          />
+
+          <label for="meanCorpuscularHemoglobin"
+            >Mean Corpuscular Hemoglobin:</label
+          >
+          <input
+            type="number"
+            id="meanCorpuscularHemoglobin"
+            name="meanCorpuscularHemoglobin"
+            step="0.00001"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="meanCorpuscularHemoglobinConcentration"
+            >Mean Corpuscular Hemoglobin Concentration:</label
+          >
+          <input
+            type="number"
+            id="meanCorpuscularHemoglobinConcentration"
+            name="meanCorpuscularHemoglobinConcentration"
+            step="0.00001"
+            required
+          />
+
+          <label for="insulin">Insulin:</label>
+          <input
+            type="number"
+            id="insulin"
+            name="insulin"
+            step="0.00001"
+            required
+          />
+
+          <label for="bmi">BMI:</label>
+          <input type="number" id="bmi" name="bmi" step="0.00001" required />
+        </div>
+        <div class="row">
+          <label for="systolicBloodPressure">Systolic Blood Pressure:</label>
+          <input
+            type="number"
+            id="systolicBloodPressure"
+            name="systolicBloodPressure"
+            step="0.00001"
+            required
+          />
+
+          <label for="diastolicBloodPressure">Diastolic Blood Pressure:</label>
+          <input
+            type="number"
+            id="diastolicBloodPressure"
+            name="diastolicBloodPressure"
+            step="0.00001"
+            required
+          />
+
+          <label for="triglycerides">Triglycerides:</label>
+          <input
+            type="number"
+            id="triglycerides"
+            name="triglycerides"
+            step="0.00001"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="hba1c">HbA1c:</label>
+          <input
+            type="number"
+            id="hba1c"
+            name="hba1c"
+            step="0.00001"
+            required
+          />
+
+          <label for="ldlCholesterol">LDL Cholesterol:</label>
+          <input
+            type="number"
+            id="ldlCholesterol"
+            name="ldlCholesterol"
+            step="0.00001"
+            required
+          />
+
+          <label for="hdlCholesterol">HDL Cholesterol:</label>
+          <input
+            type="number"
+            id="hdlCholesterol"
+            name="hdlCholesterol"
+            step="0.00001"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="alt">ALT:</label>
+          <input type="number" id="alt" name="alt" step="0.00001" required />
+
+          <label for="ast">AST:</label>
+          <input type="number" id="ast" name="ast" step="0.00001" required />
+
+          <label for="heartRate">Heart Rate:</label>
+          <input
+            type="number"
+            id="heartRate"
+            name="heartRate"
+            step="0.00001"
+            required
+          />
+        </div>
+        <div class="row">
+          <label for="creatinine">Creatinine:</label>
+          <input
+            type="number"
+            id="creatinine"
+            name="creatinine"
+            step="0.00001"
+            required
+          />
+
+          <label for="troponin">Troponin:</label>
+          <input
+            type="number"
+            id="troponin"
+            name="troponin"
+            step="0.00001"
+            required
+          />
+
+          <label for="cReactiveProtein">C-reactive Protein:</label>
+          <input
+            type="number"
+            id="cReactiveProtein"
+            name="cReactiveProtein"
+            step="0.00001"
+            required
+          />
+        </div>
+        <button type="submit" class="btn">Predict</button>
+        <button type="button" class="btn" onclick="resetForm()">Reset</button>
+      </form>
+      <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

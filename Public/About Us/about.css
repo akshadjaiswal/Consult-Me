@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Styling */
+body {
+    background: linear-gradient(120deg, #283149, #404b69);
+    color: #ffffff;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #283149;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .logo span {
+    color: #f73859;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f73859;
+}
+
+/* Business Card Container */
+.business-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Business Card Styling */
+.business-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Header Section */
+.card-header h1 {
+    font-size: 2.5rem;
+    color: #f73859;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card-header h1 span {
+    color: #ffffff;
+}
+
+.card-header p {
+    font-size: 1.2rem;
+    color: #d9d9d9;
+    margin-bottom: 20px;
+}
+
+/* Body Section */
+.card-body p {
+    font-size: 1rem;
+    color: #e6e6e6;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-body b {
+    color: #f73859;
+}
+
+/* Footer Section */
+.card-footer {
+    font-size: 0.95rem;
+    color: #cccccc;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+}
+
+.card-footer p {
+    margin: 6px 0;
+}
+
+.card-footer a {
+    color: #f73859;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effect for the Card */
+.business-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 420px) {
+    .business-card {
+        width: 90%;
+        padding: 20px;
+    }
+}

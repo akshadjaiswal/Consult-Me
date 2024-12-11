@@ -3,6 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultDiv = document.getElementById('result');
 
     // Handle form submission
+    //form value reset
+    function resetForm() {
+        const inputs = document.querySelectorAll('#prediction-form input'); // Select all input fields inside the form
+        console.log("Clicked")
+        inputs.forEach(input => {
+            input.value = ''; // Clear the value of each input field
+        });
+    }
+
+    // Add event listener to the reset button
+    document.getElementById('reset-button').addEventListener('click', resetForm);
+
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
@@ -33,11 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
             troponin: document.getElementById('troponin').value,
             cReactiveProtein: document.getElementById('cReactiveProtein').value,
         };
-
-        //form value reset
-        function resetForm() {
-            console.log("clicked")
-        }
 
         try {
             // Send the data to the server
